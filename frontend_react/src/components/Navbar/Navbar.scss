@@ -20,12 +20,12 @@
     align-items: center;
 
     img{
-       width: 300px;
-       height: 80px; 
+       width: 250px;
+       height: 70px; 
 
        @media screnn and (min-width: 2000px) {
-           width: 600px;
-           height: 160px;
+           width: 450px;
+           height: 140px;
        }
     }
 }
@@ -59,6 +59,7 @@
 
             text-transform: uppercase;
             font-weight: 500;
+            font-size: 1rem;
 
             transition: all 0.3s ease-in-out;
 
