@@ -57,6 +57,7 @@
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
+    padding: 2rem;
 
     .badge-cmp, .tag-cmp {
         padding: 1rem 2rem;
@@ -110,8 +111,8 @@
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 
         img {
-            width: 60%;
-            height: 60%;
+            width: 70%;
+            height: 70%;
         }
     }
     div:nth-child(1) {
@@ -120,26 +121,26 @@
     }
     div:nth-child(2) {
         margin: 1.75rem;
-        width: 150px;
-        height: 150px;
+        width: 90px;
+        height: 90px;
     }
     div:nth-child(3) {
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
     }
 
     @media screen and (min-width: 2000px) {
         div:nth-child(1) {
-            width: 400px;
-            height: 400px;
-        }
-        div:nth-child(2) {
-            width: 175px;
-            height: 175px;
-        }
-        div:nth-child(3) {
             width: 200px;
             height: 200px;
+        }
+        div:nth-child(2) {
+            width: 180px;
+            height: 180px;
+        }
+        div:nth-child(3) {
+            width: 160px;
+            height: 160px;
         }
     }
 
@@ -156,19 +157,45 @@
 }
 
 .app__header-img {
-    flex: 1;
+    flex: 0.75;
     height: 100%;
-    
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     position: relative;
+    padding: 1rem;
 
     img {
         width: 100%;
         object-fit: contain;
         z-index: 1;
     }
+
+    @media screen and (min-width: 2000px) {
+        flex: 0.75;
+        display: flex;
+        justify-content: center;
+        
+        img{
+            object-fit: contain;
+            width: 70%;
+            height: 70%;
+        }
+    }
+    
+    @media screen and (max-width: 1200px) {
+        flex: 0.75;
+        display: flex;
+        justify-content: center;
+        
+        img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
 
     .overlay_circle {
         position: absolute;
