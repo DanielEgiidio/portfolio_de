@@ -5,30 +5,17 @@ import { images } from "../../constants";
 
 import "./About.scss";
 
-const abouts = [
-  {
-    title: "Desenvolvedor Web",
-    description: "Eu sou um bom desenvolvedor Web.",
-    imgUrl: images.about01,
-  },
-  {
-    title: "Web Design",
-    description: "Eu sou um bom Web Design.",
-    imgUrl: images.about02,
-  },
-  {
-    title: "UI/UX",
-    description: "Eu sou um bom desenvolvedor Web.",
-    imgUrl: images.about03,
-  },
-  {
-    title: "Transformação Digital",
-    description: "Eu sou um bom desenvolvedor Web.",
-    imgUrl: images.about04,
-  },
-];
+import { urlFor, Client, client } from "../../client";
 
 const About = () => {
+  const [abouts, setAbouts] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "abouts"]';
+
+    client.fetch(query).then((data) => setAbouts(data));
+  }, []);
+
   return (
     <>
       <h2 className="head-text" style={{ fontSize: 35 }}>
@@ -45,7 +32,7 @@ const About = () => {
             className="app__profile-item"
             key={about.title + index}
           >
-            <img src={about.imgUrl} alt={about.title} />
+            <img src={urlFor(about.imgUrl)} alt={about.title} />
             <h2 className="bold-text" style={{ marginTop: 20 }}>
               {about.title}
             </h2>
