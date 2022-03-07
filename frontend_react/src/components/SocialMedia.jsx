@@ -6,13 +6,31 @@ const SocialMedia = () => {
   return (
     <div className="app__social">
       <div>
-        <BsLinkedin />
+        <a
+          href="https://www.linkedin.com/in/daniel-egidio-b6b8a0181/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <BsLinkedin />
+        </a>
       </div>
       <div>
-        <BsGithub />
+        <a
+          href="https://github.com/DanielEgiidio"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <BsGithub />
+        </a>
       </div>
       <div>
-        <SiGmail />
+        <a
+          href="mailto:danielegidioti@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <SiGmail />
+        </a>
       </div>
     </div>
   );
