@@ -27,7 +27,7 @@ Você pode clonar o projeto e rodá-lo localmente seguindo os passos abaixo:
 
 # About
 
-<a href="https://ibb.co/VtVTBHz"><img src="https://i.ibb.co/47WpNsX/Sobre.png" alt="Sobre" border="0"></a>
+<a href="https://ibb.co/yBCh2sz"><img src="https://i.ibb.co/mFKvpzn/About.png" alt="About" border="0"></a>
 
 # Works
 
